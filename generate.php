@@ -27,7 +27,7 @@ if ( isset( $_REQUEST['entry'] ) ) {
 
 // spin up the generator and generate a qr code
 $generator = new QRCode( $qr_data, array(
-	's' => 'qr-l',
+	's' => 'qr-h',
 	'fc' => '#6A0A1B'
 ) );
 
