@@ -10,6 +10,8 @@ include 'lib/qrcode.php';
 
 // spin up the generator and generate a qr code
 $generator = new QRCode( $_REQUEST['data'], array(
+	'w' => 200,
+	'h' => 200,
 	'fc' => '#6A0A1B'
 ) );
 
