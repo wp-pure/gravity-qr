@@ -12,7 +12,7 @@ include 'lib/qrcode.php';
 if ( isset( $_REQUEST['entry'] ) ) {
 
 	// split the parameter
-	$entry_part = explode( '::', $_REQUEST['entry'] )
+	$entry_part = explode( '::', $_REQUEST['entry'] );
 
 	// build the data url.
 	$qr_data = get_bloginfo( 'home' ) . '/wp-admin/admin.php?page=gf_entries&view=entry&id=' . $entry_part[0] . '&lid=' . $entry_part[1] . '&order=ASC&filter&paged=1&pos=0&field_id&operator';
