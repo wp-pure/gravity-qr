@@ -8,7 +8,7 @@ require_once("../../../wp-load.php");
 include 'lib/qrcode.php';
 
 // spin up the generator and generate a qr code
-$generator = new QRCode( get_bloginfo( 'home' ) . '/wp-admin/admin.php?page=gf_entries&view=entry&id=' . $_REQUEST['entry_id'] . '&lid=1&order=ASC&filter&paged=1&pos=0&field_id&operator', $options );
+$generator = new QRCode( get_bloginfo( 'home' ) . '/wp-admin/admin.php?page=gf_entries&view=entry&id=' . $_REQUEST['id'] . '&lid=' . $_REQUEST['lid'] . '&order=ASC&filter&paged=1&pos=0&field_id&operator', $options );
 
 
 /* Output directly to standard output. */
