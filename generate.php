@@ -16,6 +16,7 @@ $generator = new QRCode( $_REQUEST['data'], array(
 	'pr' => 10,
 	'pb' => 10,
 	'pl' => 10,
+	'sf' => 8,
 	'fc' => '#6A0A1B'
 ) );
 
